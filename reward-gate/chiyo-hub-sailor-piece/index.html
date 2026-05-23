@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chiyo HUB - Sailor Piece - Reel Gate</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"><style>:root{--ink:#0a0907;--smoke:#15120e;--paper:#f4ead5;--paper-dim:#b8ad96;--amber:#d4a574;--amber-bright:#f0c47a;--ember:#c44536;--moss:#6b8e4e;--rule:rgba(244,234,213,0.12);--rule-strong:rgba(244,234,213,0.3);}
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chiyo HUB - Sailor Piece - Reel Gate</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230d0f14%27/%3E%3Cpolygon points=%2712,10 24,16 12,22%27 fill=%27%23d4a574%27/%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"><style>:root{--ink:#0a0907;--smoke:#15120e;--paper:#f4ead5;--paper-dim:#b8ad96;--amber:#d4a574;--amber-bright:#f0c47a;--ember:#c44536;--moss:#6b8e4e;--rule:rgba(244,234,213,0.12);--rule-strong:rgba(244,234,213,0.3);}
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body{background:var(--ink);color:var(--paper);font-family:Fraunces,serif;font-weight:400;line-height:1.5;min-height:100vh;overflow-x:hidden;}
 body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(212,165,116,.10) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 50% 100%,rgba(196,69,54,.06) 0%,transparent 70%);pointer-events:none;z-index:1;}
@@ -160,6 +160,7 @@ function toggleMute(){
 function onYouTubeIframeAPIReady(){
   if (!HAS_VIDEO) return;
   player = new YT.Player('player1',{
+    host:'https://www.youtube-nocookie.com',
     videoId:YT_ID,
     playerVars:{autoplay:1,mute:1,controls:1,modestbranding:1,rel:0,playsinline:1},
     events:{
